@@ -1,4 +1,4 @@
-   /* nav bar starts here */
+       /* nav bar starts here */
    
    #nav-container {
        /* background-color: rgb(0, 0, 0); */
@@ -117,10 +117,10 @@
            grid-row: span 2 / auto;
        }
        .card-wide {
-           grid-column: span 3 / auto;
+           grid-column: span 4 / auto;
        }
        .card-wider {
-           grid-column: span 6 / auto;
+           grid-column: span 8 / auto;
        }
    }
    /* info ends here */
@@ -219,3 +219,8 @@
            background-size: 189% calc(2vw + 97px);
        }
    }
+
+.final_message{
+    margin-left: 470px;
+    margin-bottom: 200px;
+}
