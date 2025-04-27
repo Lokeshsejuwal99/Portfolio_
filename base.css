@@ -1,64 +1,84 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+/* Scrollbar Customization */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: white;
+    background: #ffffff;
+    border-radius: 10px;
 }
 
+/* Smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
 
+/* Loader Styles */
 #loader {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100vh;
-    z-index: 1;
-    overflow: visible;
-    background: rgb(14, 13, 13) url('https://i.pinimg.com/originals/d4/95/ca/d495ca580aecffac8adbd6ed6bcfa44e.gif') no-repeat center;
+    z-index: 9999;
+    background: #0e0d0d url('https://i.pinimg.com/originals/d4/95/ca/d495ca580aecffac8adbd6ed6bcfa44e.gif') no-repeat center center;
+    background-size: 150px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Base Styles */
 body {
-    background-color: black;
+    background-color: #000;
     background-image: url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
-    color: white;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Noto Sans', sans-serif;
     background-attachment: fixed;
-    /* position: fixed; */
+    background-position: center center;
+    color: #ffffff;
+    font-family: 'Noto Sans', sans-serif;
+    min-height: 100vh;
 }
 
+/* Reset default margins and paddings */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Link Styles */
 a {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     text-decoration: none;
+    transition: opacity 0.3s;
 }
 
+a:hover {
+    opacity: 0.7;
+}
+
+/* Navbar Container */
 #nav-container {
     width: 100%;
-    /* position: fixed; */
     background-color: transparent;
 }
 
+/* Navbar Styles */
 nav {
-    max-width: 1520px;
+    max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    font-size: 1.6rem;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.5rem;
 }
 
-nav a:hover {
-    opacity: .7;
-}
-
+/* Card Styles */
 .card {
     display: flex;
     flex-direction: column;
@@ -67,32 +87,43 @@ nav a:hover {
     background: #353535;
     font-size: 1.4rem;
     color: #fff;
-    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
     height: 100%;
     width: 100%;
-    /* border-radius: 24px; */
-    transition: all 500ms;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 2px 8px, rgba(2, 8, 20, 0.1) 0px 1px 3px;
+    transition: all 0.4s ease-in-out;
     overflow: hidden;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .card:hover {
-    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
-    transform: translateY(-3px) scale(1.07);
+    box-shadow: rgba(2, 8, 20, 0.3) 0px 8px 24px, rgba(2, 8, 20, 0.2) 0px 4px 8px;
+    transform: translateY(-5px) scale(1.05);
 }
 
 .card p {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #000;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
     margin-top: auto;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
+/* Responsive for Mobile Devices */
 @media screen and (max-width: 1000px) {
     body {
         background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-position: center;
+    }
+
+    nav {
+        grid-template-columns: 1fr;
+        text-align: center;
+        row-gap: 15px;
     }
 }

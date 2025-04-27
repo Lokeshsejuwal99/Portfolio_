@@ -5,115 +5,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Lokesh Sejuwal</title>
+
+    <!-- External CSS & JS Links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <script type="text/javascript" src="loading.js" defer></script>
+    <script type="text/javascript" src="nav.js" defer></script>
 
-    <script type="text/javascript" src="loading.js"></script>
-
-    <title>Portfolio</title>
-
+    <!-- Internal CSS -->
     <style>
         @import url('./base.css');
         @import url('./home.css');
+        @import url('./contact.css');
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
     </style>
 </head>
 
 <body>
-    <div id="loader"> </div>
 
+    <!-- Loader -->
+    <div id="loader"></div>
+
+    <!-- Navigation Bar -->
     <div id="nav-container">
         <nav>
             <input type="checkbox" id="nav-toggle">
             <label for="nav-toggle" class="burger-menu">
-            <div class="bars">
-            <i  class="bi bi-list" aria-hidden="true"></i> 
-            </div>
-            <div class="cross">
-            <i class="fas fa-times"></i>
-            </div>
-        </label>
-            <div class="nav-bar-left">
+                <div class="bars">
+                    <i class="bi bi-list" aria-hidden="true"></i>
+                </div>
+                <div class="cross">
+                    <i class="fas fa-times"></i>
+                </div>
+            </label>
 
+            <div class="nav-bar-left">
                 <a href="index.html#project">Projects</a>
             </div>
             <div class="nav-bar-mid">
-                <a href="">
-                Lokesh  
-            </a>
+                <a href="index.html">LOKESH</a>
             </div>
             <div class="nav-bar-right">
-                <a href="index.html#about-me">About me</a>
-
-
+                <a href="index.html#about-me">About Me</a>
             </div>
         </nav>
-
     </div>
 
+    <!-- Info Section -->
     <div class="info">
-
         <div class="name">
             <h1 style="text-align: center;">Lokesh Sejuwal</h1>
-            <div style="font-size: 40px;text-align: center;" class="link">
-                <a href="https://github.com/Lokeshsejuwal99" target="_blank"><i class="bi bi-github"></i></a>
-                <a href="https://www.linkedin.com/in/lokesh-sejuwal-b3651421a/" target="_blank"><i class="bi bi-linkedin"></i></a>
-
+            <div class="link" style="font-size: 40px; text-align: center;">
+                <a href="https://github.com/Lokeshsejuwal99" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/lokesh-sejuwal-b3651421a/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
             </div>
         </div>
 
         <div class="dev">
             <h2 style="text-align: center;">Backend Developer</h2>
-            <p style="text-align: center; font-size: 25px;"> I'm an <b>Enthusiastic Backend Developer</b> with a diverse set of skills, ranging from Front-end development, and all the way to Backend-development</p>
+            <p style="text-align: center; font-size: 25px;">
+                I'm an <b>Enthusiastic Backend Developer</b> with a diverse set of skills, ranging from Front-end development to Backend development.
+            </p>
         </div>
-
     </div>
 
-
-
-    <div id="about-me" style="background-color: black; padding: 7%;">
-
-        <h1 style="text-align: center;  margin-bottom: 30px;">About me</h1>
-     <p>Hey there! I'm Lokesh Sejuwal, a recent graduate with a BCS(Hons) in Computer Science from Sunway College Kathmandu. I'm an enthusiastic web developer with a deep passion for technology and a particular interest in Backend (Python) development. During my academic journey, I've explored various programming languages, including JavaScript, Java, C, C++, and Python, which has enabled me to take on diverse web development projects with a strong foundation in front-end and back-end technologies.</p>
-
+    <!-- About Me Section -->
+    <div id="about-me" style="background-color: black; padding: 7%; color: white;">
+        <h1 style="text-align: center; margin-bottom: 30px;">About Me</h1>
+        <p>
+            Hey there! I'm Lokesh Sejuwal, a recent graduate with a BCS(Hons) in Computer Science from Sunway College Kathmandu. 
+            I'm an enthusiastic web developer with a deep passion for technology and a particular interest in Backend (Python) development. 
+            During my academic journey, I've explored various programming languages, including JavaScript, Java, C, C++, and Python, 
+            which has enabled me to take on diverse web development projects with a strong foundation in front-end and back-end technologies.
+        </p>
     </div>
-    <div class="shapedividers_com-1267" style="padding:6%">
-    </div>
 
+    <!-- Divider (Optional Style) -->
+    <div class="shapedividers_com-1267" style="padding:6%"></div>
+
+    <!-- Projects Section -->
     <div id="project">
         <h1 style="text-align: center; margin: 60px;">Projects</h1>
 
-
         <div class="project-grid">
-            <div onclick="window.open('https://github.com/tandukar/portfolio','_newtab');" class="card card-tall card-wide" style="background-image:url(./images/newport.png); border: 1px;">
+            <div onclick="window.open('https://github.com/Lokeshsejuwal99/MicroLibrary', '_blank');" class="card card-wide" style="background-image: url('images/Microlib.jpg');">
                 <div>
-                    <p style="background-color: rgb(255, 255, 255); color: black; font-weight: bolder;">&emsp;&emsp;&emsp;&emsp;Portfolio&emsp;&emsp;&emsp;&emsp; </p>
-               </div>
-
-            </div>
-
-            <div onclick="window.open('https://github.com/Lokeshsejuwal99/MicroLibrary','_newtab');" class="card card-wide" style="background-image:url(images/Microlib.jpg);">
-                 <div>
-                    <p style="background-color: rgb(255, 255, 255); color: black; font-weight: bolder; text-align: center;">&emsp;&emsp;&emsp;MicorLibrary&emsp;&emsp;&emsp;</p>
-               </div>
-            </div>
-
-            <div onclick="window.open('https://github.com/Lokeshsejuwal99/Project_Management','_newtab');" class="card card-wide" style="background-image:url(https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/How%20to%20Choose%20the%20Best%20Project%20Management%20Software1643648253991190.jpg);">
-                    <div>
-                    <p style="background-color: rgb(255, 255, 255); color: black; font-weight: bolder;">&emsp;&emsp;Project Management System&emsp;&emsp;</p>
+                    <p style="background-color: white; color: black; font-weight: bold; text-align: center;">Microlibrary</p>
                 </div>
             </div>
 
-            <div onclick="window.open('https://github.com/Lokeshsejuwal99/Parking-Managemet-System.git','_newtab');" class="card card-wider" style="background-image:url('images/vpms.png')">
+            <div onclick="window.open('https://github.com/Lokeshsejuwal99/Project_Management', '_blank');" class="card card-wide" style="background-image: url('https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/How%20to%20Choose%20the%20Best%20Project%20Management%20Software1643648253991190.jpg');">
                 <div>
-                    <p style="background-color: rgb(255, 255, 255); color: black; font-weight: bolder;"></p>
+                    <p style="background-color: white; color: black; font-weight: bold; text-align: center;">Project Management</p>
+                </div>
+            </div>
+
+            <div onclick="window.open('https://github.com/Lokeshsejuwal99/Parking-Managemet-System.git', '_blank');" class="card card-wider" style="background-image: url('images/vpms.png');">
+                <div>
+                    <p style="background-color: white; color: black; font-weight: bold; text-align: center;">VPMS</p>
+                </div>
+            </div>
+
+            <div onclick="window.open('https://github.com/tandukar/portfolio', '_blank');" class="card card-wider" style="background-image: url('images/sewalnk_homepage.png');">
+                <div>
+                    <p style="background-color: white; color: black; font-weight: bold; text-align: center;">Portfolio</p>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Contact Me Section -->
+    <div id="contact">
+        <h1 style="text-align: center; margin: 60px;">Contact Me</h1>
+        <div class="contact-form">
+            <form>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
 
 </body>
-<script src="nav.js"></script>
 
 </html>

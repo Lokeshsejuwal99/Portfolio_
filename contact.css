@@ -1,0 +1,69 @@
+/* contact.css */
+
+/* Full page background */
+body {
+ background: url('/path-to-your-image.jpg') no-repeat center center fixed;
+ background-size: cover;
+ font-family: 'Arial', sans-serif;  /* Clean font */
+ margin: 0;
+ padding: 0;
+ color: black;
+}
+
+/* Contact section container */
+#contact {
+ background-color: rgba(255, 255, 255, 0.9);  /* Slight white overlay to ensure text is legible */
+ padding: 60px 20px;
+ color: black;
+ border-radius: 10px; /* Soft corners */
+ max-width: 800px; /* Limiting the width */
+ margin: 0 auto; /* Centering */
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Contact form */
+.contact-form {
+ max-width: 600px;
+ margin: 0 auto;
+}
+
+/* Form structure */
+.contact-form form {
+ display: flex;
+ flex-direction: column;
+}
+
+/* Form inputs and text area */
+.contact-form input,
+.contact-form textarea {
+ margin-bottom: 20px;
+ padding: 12px 15px;
+ border: 1px solid #ccc;
+ border-radius: 8px;
+ font-size: 16px;
+ width: 100%;
+}
+
+/* Submit button styling */
+.contact-form button {
+ padding: 12px 20px;
+ background-color: #000;
+ color: #fff;
+ border: none;
+ font-size: 18px;
+ border-radius: 8px;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.contact-form button:hover {
+ background-color: #444;
+}
+
+/* Optional: Add some spacing at the bottom of the page */
+footer {
+ padding: 20px;
+ text-align: center;
+ background-color: #f5f5f5;
+}
