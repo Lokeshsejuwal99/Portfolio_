@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <script type="text/javascript" src="loading.js" defer></script>
     <script type="text/javascript" src="nav.js" defer></script>
+    <script type="text/javascript" src="projectSlider.js" defer></script>
+
 
     <!-- Internal CSS -->
     <style>
@@ -39,17 +41,21 @@
                     <i class="fas fa-times"></i>
                 </div>
             </label>
-
-            <div class="nav-bar-left">
+          
+            <div class="nav-content">
+              <div class="nav-bar-left">
                 <a href="index.html#project">Projects</a>
-            </div>
-            <div class="nav-bar-mid">
-                <a href="index.html">LOKESH</a>
-            </div>
-            <div class="nav-bar-right">
+              </div>
+              <div class="nav-bar-right">
                 <a href="index.html#about-me">About Me</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="https://wa.me/9779865367362" target="_blank" class="whatsapp">
+                    <i class="fab fa-whatsapp" style="color: green; font-size: 33px; font-style: bolder;"></i>
+                </a>
+              </div>
             </div>
-        </nav>
+          </nav>
+          
     </div>
 
     <!-- Info Section -->
@@ -87,34 +93,30 @@
     <!-- Projects Section -->
     <div id="project">
         <h1 style="text-align: center; margin: 60px;">Projects</h1>
-
-        <div class="project-grid">
-            <div onclick="window.open('https://github.com/Lokeshsejuwal99/MicroLibrary', '_blank');" class="card card-wide" style="background-image: url('images/Microlib.jpg');">
-                <div>
-                    <p style="background-color: white; color: black; font-weight: bold; text-align: center;">Microlibrary</p>
-                </div>
+    
+        <div class="project-slider">
+            <div class="project-slide active" onclick="window.open('https://github.com/Lokeshsejuwal99/MicroLibrary', '_blank');" style="background-image: url('images/Microlib.jpg');">
+                <p>Microlibrary</p>
             </div>
-
-            <div onclick="window.open('https://github.com/Lokeshsejuwal99/Project_Management', '_blank');" class="card card-wide" style="background-image: url('https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/How%20to%20Choose%20the%20Best%20Project%20Management%20Software1643648253991190.jpg');">
-                <div>
-                    <p style="background-color: white; color: black; font-weight: bold; text-align: center;">Project Management</p>
-                </div>
+    
+            <div class="project-slide" onclick="window.open('https://github.com/Lokeshsejuwal99/Project_Management', '_blank');" style="background-image: url('https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/How%20to%20Choose%20the%20Best%20Project%20Management%20Software1643648253991190.jpg');">
+                <p>Project Management</p>
             </div>
-
-            <div onclick="window.open('https://github.com/Lokeshsejuwal99/Parking-Managemet-System.git', '_blank');" class="card card-wider" style="background-image: url('images/vpms.png');">
-                <div>
-                    <p style="background-color: white; color: black; font-weight: bold; text-align: center;">VPMS</p>
-                </div>
+    
+            <div class="project-slide" onclick="window.open('https://github.com/Lokeshsejuwal99/Parking-Managemet-System.git', '_blank');" style="background-image: url('images/vpms.png');">
+                <p>VPMS</p>
             </div>
-
-            <div onclick="window.open('https://github.com/tandukar/portfolio', '_blank');" class="card card-wider" style="background-image: url('images/sewalnk_homepage.png');">
-                <div>
-                    <p style="background-color: white; color: black; font-weight: bold; text-align: center;">Portfolio</p>
-                </div>
+    
+            <div class="project-slide" onclick="window.open('https://github.com/tandukar/portfolio', '_blank');" style="background-image: url('images/sewalnk_homepage.png');">
+                <p>SewaLink</p>
             </div>
+    
+            <button class="prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next-btn" onclick="moveSlide(1)">&#10095;</button>
         </div>
     </div>
-
+    
+    
     <!-- Contact Me Section -->
     <div id="contact">
         <h1 style="text-align: center; margin: 60px;">Contact Me</h1>

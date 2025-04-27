@@ -21,14 +21,9 @@ window.addEventListener('scroll', function() {
 
 });
 
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-//     var currentScrollPos = window.pageYOffset;
-//     if (prevScrollpos > currentScrollPos) {
-//         document.getElementById("nav-container").style.top = "0";
-//         document.getElementById("nav-container").style.backgroundColor = "";
-//     } else {
-//         document.getElementById("nav-container").style.backgroundColor = "black";
-//     }
-//     prevScrollpos = currentScrollPos;
-// }
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+        document.getElementById("nav-container").style.top = "0";
+        document.getElementById("nav-container").style.backgroundColor = "";    }
+    prevScrollpos = currentScrollPos;

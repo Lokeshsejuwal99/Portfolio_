@@ -2,7 +2,6 @@
 
 /* Full page background */
 body {
- background: url('/path-to-your-image.jpg') no-repeat center center fixed;
  background-size: cover;
  font-family: 'Arial', sans-serif;  /* Clean font */
  margin: 0;
@@ -12,13 +11,10 @@ body {
 
 /* Contact section container */
 #contact {
- background-color: rgba(255, 255, 255, 0.9);  /* Slight white overlay to ensure text is legible */
  padding: 60px 20px;
- color: black;
- border-radius: 10px; /* Soft corners */
+ color:rgb(10, 111, 155);;
  max-width: 800px; /* Limiting the width */
  margin: 0 auto; /* Centering */
- box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 /* Contact form */
@@ -47,7 +43,7 @@ body {
 /* Submit button styling */
 .contact-form button {
  padding: 12px 20px;
- background-color: #000;
+ background-color: rgb(6, 114, 161);
  color: #fff;
  border: none;
  font-size: 18px;
@@ -58,7 +54,7 @@ body {
 
 /* Button hover effect */
 .contact-form button:hover {
- background-color: #444;
+ background-color: #3a30fb;
 }
 
 /* Optional: Add some spacing at the bottom of the page */
