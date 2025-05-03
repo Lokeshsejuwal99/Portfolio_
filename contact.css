@@ -12,7 +12,7 @@ body {
 /* Contact section container */
 #contact {
  padding: 60px 20px;
- color:rgb(10, 111, 155);;
+ color: black;
  max-width: 800px; /* Limiting the width */
  margin: 0 auto; /* Centering */
 }
@@ -43,7 +43,7 @@ body {
 /* Submit button styling */
 .contact-form button {
  padding: 12px 20px;
- background-color: rgb(6, 114, 161);
+ background-color: black;
  color: #fff;
  border: none;
  font-size: 18px;
@@ -54,7 +54,7 @@ body {
 
 /* Button hover effect */
 .contact-form button:hover {
- background-color: #3a30fb;
+ background-color: #444446;
 }
 
 /* Optional: Add some spacing at the bottom of the page */
